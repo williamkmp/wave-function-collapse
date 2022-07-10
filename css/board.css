@@ -1,0 +1,39 @@
+.board{
+    --child-count : var(--grid-item-count);
+    --radius : var(--grid-radius);
+    --padding : var(--grid-padding);
+    --shadow : var(--shadow-light);
+    --border-color : var(--grid-border-color); 
+    --size : var(--grid-size);
+    --bg-color: var(--grid-background-color);
+
+    height: var(--size);
+    width: var(--size);
+    padding: var(--padding);
+
+    display: grid;
+    grid-template-rows: repeat(var(--child-count), 1fr);
+    grid-template-columns: repeat(var(--child-count), 1fr);
+    align-self: center;
+    justify-self: center;
+
+    border: 1rem solid var(--border-color);
+    border-radius: var(--radius);
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+}
+
+.board .item{
+    --bg-color: var(--grid-item-background-color);
+    grid-column: span 1;
+    grid-row: span 1;
+
+    background-color: var(--bg-color);
+    background-image: url(../images/down.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+

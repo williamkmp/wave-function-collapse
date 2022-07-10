@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	/* base-colors */
+	--color-1: rgb(242, 245, 255);
+	--color-2: rgb(255, 255, 255);
+	--color-3: rgb(153, 0, 241);
+	--shadow-light: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+	/* sizing */
+	--corner-radius: 1rem;
+	--padding: 1rem;
+
+	/* appliaction */
+	--background-color: var(--color-1);
+
+	/* grid settings */
+	--grid-item-count: 10;
+	--grid-padding: var(--padding);
+	--grid-size: min(70vw, 70vh);
+	--grid-radius: var(--corner-radius);
+	--grid-border-color: var(--color3);
+	--grid-background-color: var(--color-2);
+
+	--grid-item-background-color: var(--color-1);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.screen {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
