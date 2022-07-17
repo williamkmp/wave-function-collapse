@@ -9,8 +9,7 @@ export class Board {
 
 		for (let row = 0; row < GRID.SIZE; row++) {
 			for (let col = 0; col < GRID.SIZE; col++) {
-				let cell = new Cell(row, col);
-				cell.renderTo(this);
+				new Cell(row, col).renderTo(this);
 			}
 		}
 	}
