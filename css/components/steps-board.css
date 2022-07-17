@@ -1,0 +1,3 @@
+.steps-board::before{
+    content: "Step: ";
+}
