@@ -65,7 +65,8 @@ stateUp.addBottomCandidate      (stateBlank);
 stateUp.addBottomCandidate      (stateDown);
 
 /**
- * 
+ * function to get all states that have been configured
+ * @returns {Array<State>} configured states
  */
 export function generateInitialState(){
     return [stateUp,  stateLeft, stateRight, stateDown];
