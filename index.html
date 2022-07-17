@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/components/layout.css">
+    <link rel="stylesheet" href="./css/components/board.css">
+    <link rel="stylesheet" href="./css/components/button.css">
+    <link rel="stylesheet" href="./css/components/steps-board.css">
+
     <script type="module" defer src="./js/index.js"></script>
+
     <title>Wave-Function-Colapse</title>
 </head>
 <body>
@@ -18,10 +24,13 @@
     <!-- untuk konten -->
     <div id="root" class="screen">
 
-        <div id="board" class="board">
-            
-        </div>
+        <div class="steps-board" id="stepView">ERR</div>
 
+        <div id="board" class="board"></div>
+
+        <div class="button-group">
+            <button class="button" id="renderButton">RENDER</button>
+        </div>
     </div>
 
 </body>
